@@ -13,7 +13,10 @@ body{
 nav{
     background: #022947;
     height: 80px;
+    position: fixed;
+    top: 0;
     width: 100%;
+    z-index: 1000;
 }
 label.logo{
     color: white;
@@ -120,6 +123,7 @@ a.active, a:hover{
     background-size: cover; 
     background-repeat: no-repeat;
     background-position: center;
+    margin-top: 8.7vh;
 }
 .left_div{
     display: flex;

@@ -11,5 +11,6 @@ path('aboutUs',views.aboutus_pg,name='aboutus'),
 path('contactUs',views.contactus_pg,name='contactus'),
 path('pricingPlan',views.pricingplan_pg,name='pricingplan'),
 path('serviceDetails',views.servicedetails_pg,name='servicedetails'),
+path('addItem',views.additem_pg,name='additem'),
 
 ]

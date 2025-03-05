@@ -16,3 +16,6 @@ def pricingplan_pg(request):
 
 def servicedetails_pg(request):
     return render(request,'Pages/servicedetails.html')
+
+def additem_pg(request):
+    return render(request,'Pages/additem.html')
