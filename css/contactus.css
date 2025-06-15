@@ -191,7 +191,7 @@ a.active, a:hover{
     font-size: 13px;
     margin: 1vh;
 }
-.form{
+form{
     height: 62vh;
     width: 60vh;
     margin-left: 5vh;
@@ -210,31 +210,43 @@ a.active, a:hover{
     margin: 1vh;
     color: white;
 }
-.nameEmail{
+/* .nameEmail{
     display: flex;
     justify-content: space-between;
     height: 5vh;  
     margin-left: .5vh;
     margin-right: .5vh; 
     margin-top: 4vh; 
-}
+} */
 .name{
-    width: 26vh;
+    width: 52.5vh;
     padding-left: 2vh;
     font-size: 13px;
     border-radius: 8px;
     border: none;
     margin-top: 1vh;
-    margin-left: 1vh;
+    margin-left: 1.5vh;
+    height: 4vh;
 }
 .emailid{
-    width: 26vh;
+    width: 52.5vh;
     padding-left: 2vh;
     font-size: 13px;
     border-radius: 8px;
     border: none;
     margin-top: 1vh;
-    margin-left: 1vh;
+    margin-left: 1.5vh;
+    height: 4vh;
+}
+.phone_no{
+    width: 52.5vh;
+    padding-left: 2vh;
+    font-size: 13px;
+    border-radius: 8px;
+    border: none;
+    margin-top: 1vh;
+    margin-left: 1.5vh;
+    height: 4vh;
 }
 .subject{
     width: 52.5vh;

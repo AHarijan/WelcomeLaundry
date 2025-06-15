@@ -9,6 +9,13 @@
     <link rel="stylesheet" href="./css/contactus.css">
     <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+    emailjs.init({
+    publicKey: "wYak1ESjifnjl_RW_",  // Replace with your actual key
+    blockHeadless: true,  // Prevents spam bots
+  });
+</script>
 </head>
 <body>
   <nav>
@@ -68,16 +75,15 @@
           </div>
         </div>
       </div>  
-      <div class="form">
+      <form method="post">
         <h1 class="sendMsg">Send us a Message</h1>
-        <div class="nameEmail">
-          <input list="name" id="name" class="name" name="name" placeholder="Name">
-          <input list="emailid" id="emailid" class="emailid" name="emailid" placeholder="Email ID">
-        </div>
+        <input list="name" id="name" class="name" name="name" placeholder="Name">
+        <input list="emailid" id="emailid" class="emailid" name="emailid" placeholder="Email ID">
+        <input list="phone_no" id="phone_no" class="phone_no" name="phone_no" placeholder="Mobile No">
         <input list="subject" id="subject" class="subject" name="subject" placeholder="Subject">
         <input list="message" id="message" class="message" name="message" placeholder="Message">
-        <p class="send">Send</p>
-      </div>
+        <button type="submit" class="send">Send</button>
+      </form>
     </div>
     <section class="footer">
       <div class="ribbon">
@@ -119,6 +125,51 @@
 
     </section>
   
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>    
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const form = document.querySelector('form');
+        const sendButton = document.querySelector('.send');
+        
+        // Make the .send paragraph act as a submit button
+        sendButton.addEventListener('click', function(e) {
+          e.preventDefault();
+          sendEmail();
+        });
+        
+        function sendEmail() {
+          // Get form values
+          const name = document.getElementById('name').value;
+          const email = document.getElementById('emailid').value;
+          const phone_no = document.getElementById('phone_no').value;
+          const subject = document.getElementById('subject').value;
+          const message = document.getElementById('message').value;
+          
+          // Validate form
+          if (!name || !email || !subject || !message) {
+            alert('Please fill in all fields');
+            return;
+          }
+          
+          // EmailJS service parameters
+          const serviceID = 'service_zji7cqa';
+          const templateID = 'template_54yx1fm';
+          
+          // Send email
+          emailjs.send(serviceID, templateID, {
+            from_name: name,
+            from_email: email,
+            phone_no: phone_no,
+            subject: subject,
+            message: message
+          })
+          .then(function(response) {
+            alert('Message sent successfully!');
+            form.reset(); // Clear the form
+          }, function(error) {
+            alert('Failed to send message: ' + JSON.stringify(error));
+          });
+        }
+      });
+    </script>
 </body>
 </html>
