@@ -101,7 +101,9 @@ footer{
     .checkbtn{
         display: block;
     }
-
+    .logoimg{
+        height: 10vh;
+    }
     ul{
          position: fixed;
          width: 100%;
