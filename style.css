@@ -471,7 +471,7 @@ footer{
     }
     .service_section1_left {
         width: 95%;
-        height: 80vh;
+        height: 110vh;
         margin-top: 5vh;
         margin-bottom: 5vh;
         border-radius: 10px;
@@ -485,6 +485,12 @@ footer{
     }
     .service_section1_left_top {
         height: 90vh;
+    }
+    .packagerate{
+        height: 30vh;
+    }
+    .serviceitems{
+        height: 60vh;
     }
 }
 
