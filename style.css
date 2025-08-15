@@ -257,11 +257,11 @@ footer{
     align-items: center;
     margin-bottom: 10vh;
     height: 80vh;
-    width: 80%;
+    width: 98%;
 }
 .about_section1_left{
     display: flex;
-    height: 62vh;
+    height: 80vh;
     width: 40%;
     margin-top: 2px;
     position: relative;
