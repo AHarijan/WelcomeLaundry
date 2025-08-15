@@ -475,7 +475,11 @@ footer{
         margin-bottom: 5vh;
         border-radius: 10px;
     }
+    .service_section1_left_top {
+        height: 90vh;
+    }
 }
+
 /* /////////////contact us page////////// */
 .contact_us_section1{
     display: flex;
