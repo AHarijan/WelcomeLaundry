@@ -556,9 +556,16 @@ footer{
     .aboutusBG, .service_section1_left_bottom{
         display: none !important;
     }
-    .contact_us_section1_left, .contact_us_section1_right {
+    .contact_us_section1_left {
         width: 95%;
+        height: 45vh;
         margin-top: 5vh;
+        margin-bottom: 15vh;
+        border-radius: 10px;
+    }
+    .contact_us_section1_right {
+        width: 95%;
+        margin-top: 10vh;
         border-radius: 10px;
     }
     .addPhone{
