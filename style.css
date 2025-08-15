@@ -471,6 +471,7 @@ footer{
     }
     .service_section1_left, .service_section1_right {
         width: 95%;
+        height: 85vh;
         margin-top: 5vh;
         margin-bottom: 5vh;
         border-radius: 10px;
