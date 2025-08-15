@@ -364,7 +364,7 @@ footer{
     width: 100%;
 }
 .service_section1_left{
-    height: 80vh; 
+    height: 95vh; 
     width: 59%;   
     margin-left: 10px;
 }
@@ -404,6 +404,7 @@ footer{
     margin-bottom: 20px;
     display: flex;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
 }
 .monthlyrate{
@@ -574,7 +575,7 @@ footer{
         width: 95%;
     }
     .add, p{
-        width: 95%;
+        /* width: 95%; */
     }
     .add p{
         width: 100%;
