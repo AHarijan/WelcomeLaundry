@@ -475,6 +475,7 @@ footer{
         margin-top: 5vh;
         margin-bottom: 5vh;
         border-radius: 10px;
+        flex-wrap: wrap;
     }
     .service_section1_right {
         width: 95%;
@@ -484,6 +485,7 @@ footer{
         border-radius: 10px;
     }
     .service_section1_left_top {
+        flex-wrap: wrap;
         height: 150vh;
     }
     .service_section1_right_top {
